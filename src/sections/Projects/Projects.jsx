@@ -18,7 +18,7 @@ function Projects() {
         />
         <ProjectCard
           src={Snake}
-          link="https://github.com/aditisoni29/Snake-Eater-.git"
+          link="https://github.com/aditisoni29/Snake-Eater-"
           title="Python Game Development"
           description="A classic Snake game developed using Python. Enjoy a fun coding challenge!"
         />
