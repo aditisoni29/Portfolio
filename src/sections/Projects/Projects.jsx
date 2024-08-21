@@ -1,7 +1,7 @@
 import styles from './ProjectsStyles.module.css';
 import Pfp from '../../assets/Portfolio.png';
 import Snake from '../../assets/Snake2.jpg';
-import GPTEcho from '../../assets/GPTEcho.png';
+import GPTEcho from '../../assets/GPTEcho.svg';
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
