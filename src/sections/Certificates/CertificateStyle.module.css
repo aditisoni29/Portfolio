@@ -1,0 +1,109 @@
+/* Container for the entire section */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  /* Styling for the "Certifications" heading */
+  .cfcs {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Row container for the cards, ensures the cards are displayed in a row and wrap when needed */
+  .cardRow {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  /* Individual card styling */
+  .card {
+    width: 195px;
+    height: 285px;
+    background: #313131;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative; /* Added to properly position the SVG and textBox */
+    overflow: hidden; /* Ensures content doesn't spill outside the card */
+    transition: 0.2s ease-in-out;
+  }
+  
+  /* Styling for the SVG image within the card */
+  .img {
+    height: 30%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+  }
+  
+  /* Text box containing the certificate details */
+  .textBox {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transition: 0.2s ease-in-out;
+    z-index: 2;
+  }
+  
+  /* Styling for the text elements inside the text box */
+  .textBox > .text {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .textBox > .head {
+    font-size: 20px;
+  }
+  
+  .textBox > .price {
+    font-size: 17px;
+  }
+  
+  .textBox > span {
+    font-size: 12px;
+    color: lightgrey;
+  }
+  
+  /* Hover effects to reveal the text box and enlarge the image */
+  .card:hover > .textBox {
+    opacity: 1;
+  }
+  
+  .card:hover > .img {
+    height: 65%;
+    filter: blur(7px);
+    animation: anim 3s infinite;
+  }
+  
+  /* Animation for the SVG image on hover */
+  @keyframes anim {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Hover effect on the card itself */
+  .card:hover {
+    transform: scale(1.04) rotate(-1deg);
+  }
