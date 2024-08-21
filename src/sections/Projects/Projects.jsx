@@ -1,7 +1,7 @@
 import styles from './ProjectsStyles.module.css';
 import Pfp from '../../assets/Portfolio.png';
 import Snake from '../../assets/Snake2.jpg';
-import Law from '../../assets/Law2.jpg';
+import GPTEcho from '../../assets/GPTEcho.png';
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
@@ -23,10 +23,10 @@ function Projects() {
           description="A classic Snake game developed using Python. Enjoy a fun coding challenge!"
         />
         <ProjectCard
-          src={Law}
-          link="_blank"
-          title="Lawyer's Hub"
-          description="An innovative platform designed for lawyers, featuring a virtual law library and more."
+          src={GPTEcho}
+          link="https://github.com/aditisoni29/GPTEcho.git"
+          title="GPTEcho"
+          description="Advanced AI agent that interacts with users in real-time, generates and prioritizes tasks."
           style={{ backgroundColor: 'transparent' }} // Remove background for this image
         />
       </div>
