@@ -11,14 +11,14 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={Pfp}
-          link="_blank"
+          link="https://portfolio-kappa-seven-86.vercel.app/"
           title="Personal Portfolio"
           description="A self-introductory website showcasing my skills, projects, and experience."
           style={{ backgroundColor: 'transparent' }} // Remove background for this image
         />
         <ProjectCard
           src={Snake}
-          link="_blank"
+          link="https://github.com/aditisoni29/Snake-Eater-.git"
           title="Python Game Development"
           description="A classic Snake game developed using Python. Enjoy a fun coding challenge!"
         />
