@@ -26,7 +26,7 @@ function Projects() {
           src={GPTEcho}
           link="https://github.com/aditisoni29/GPTEcho.git"
           title="GPTEcho"
-          description="Advanced AI agent that interacts with users in real-time, generates and prioritizes tasks."
+          description="Advanced AI agent that interacts with users in real-time, understands their needs, and autonomously generates and prioritizes tasks."
           style={{ backgroundColor: 'transparent' }} // Remove background for this image
         />
       </div>
