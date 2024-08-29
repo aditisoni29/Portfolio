@@ -34,6 +34,7 @@ function Projects() {
         </div>
         <br />
         <br />
+        <br />
         <div className={styles.projectsContainer}>
         <ProjectCard
           src={Law}
